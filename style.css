@@ -1,0 +1,79 @@
+/* Pink gradient background gives the glass something to blur */
+body {
+  background: linear-gradient(135deg, #ffd6e8, #ffffff, #ffb6d5);
+  background-attachment: fixed;
+  font-family: Arial, sans-serif;
+  color: #5a2a43;
+}
+
+/* Centered layout with glass effect */
+#container {
+  width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.45);   /* see-through white */
+  backdrop-filter: blur(12px);                   /* the frosted blur */
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  border-radius: 20px;
+}
+
+h1 {
+  color: #d63384;
+  font-size: 36px;
+  letter-spacing: 3px;
+  text-align: center;
+}
+
+h2 {
+  color: #d63384;
+}
+
+/* id selector: used once */
+#tagline {
+  text-align: center;
+  color: #e75480;
+}
+
+/* class selector: each product is a glass card (box model) */
+.product {
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(8px);
+  border: 2px solid rgba(255, 182, 213, 0.9);
+  border-radius: 15px;
+  padding: 15px;
+  margin: 20px;
+  text-align: center;
+}
+
+.product img {
+  width: 250px;
+  height: 250px;
+  object-fit: cover;      /* crops images neatly to the same size */
+  border-radius: 12px;
+}
+
+.desc {
+  text-transform: capitalize;
+  word-spacing: 5px;
+}
+
+.price {
+  color: #d63384;
+  font-weight: bold;
+}
+
+h5 {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* Table */
+table {
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-collapse: collapse;
+}
+
+th {
+  background-color: #ffb6d5;
+}
